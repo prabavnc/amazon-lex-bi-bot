@@ -66,7 +66,7 @@ do
 	aws lex-models put-slot-type --name $i --cli-input-json file://slots/$i.json >/dev/null 
 done
 
-# build the intents
+# build the intents testing
 for i in $INTENTS
 do
 	echo "Creating intent: $i"
